@@ -104,9 +104,9 @@ def return_file():
 def file_downloads():
 	return render_template('exporesult.html')
 
-	
-
-
+@app.route('/integrantes/')
+def acerca():
+	return render_template('integrantes.html')
 
 if __name__ == '__main__':
     app.run(debug=True, port=8000)
